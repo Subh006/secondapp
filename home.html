@@ -1,0 +1,12 @@
+<div ng-controller="homeController" class="homeDiv">
+    <h1>Welcome to employee service portal</h1>
+    <hr />
+    <div class="optDiv">
+        <h2><a href="#" ng-click="navigate('getDetail.html')">Get details</a>
+        &nbsp;&nbsp; | &nbsp;&nbsp;
+        <a href="#" ng-click="navigate('addDetail.html')">Add details</a></h2>
+    </div>
+    <hr />
+
+    <div ng-include="template"></div>
+</div>

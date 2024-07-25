@@ -1,0 +1,19 @@
+<div ng-controller="addDetailController">
+    <h1>Add Employee</h1>
+    <form name="addForm" ng-submit="addForm.$valid && addEmployee()" novalidate>
+            
+        <label for="ename" >Employee Name:-</label>
+        <input type="text" ng-model="employee.ename"  id="ename" required><br>
+
+        <label for="salary" >Salary:-</label>
+        <input type="number" ng-model="employee.salary" id="salary" required><br>
+
+        <label for="dept">Department:-</label>
+        <input type="text" ng-model="employee.dept" id="dept" required><br>
+
+        <button class="btn btn-primary" type="submit">Add Employee</button><br>
+
+        <p>Form Valid? {{addForm.$valid}} </p>
+
+    </form>
+</div>

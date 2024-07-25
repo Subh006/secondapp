@@ -1,0 +1,25 @@
+<div ng-controller="getDetailController">
+    <h1>Employee Details</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Employee Id</th>
+                <th>Employee Name</th>
+                <th>Salary</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="emp in employees">
+                <td>{{emp.eid}}</td>
+                <td>{{emp.ename}}</td>
+                <td>{{emp.salary}}</td>
+                <td>{{emp.dept}}</td>
+                <td><button class="btn btn-primary" ng-click="navigate('editDetail.html')">Edit</button>
+                    &nbsp;&nbsp; | &nbsp;&nbsp;
+                    <button class="btn btn-danger" ng-click="navigate('deleteDetail.html')">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

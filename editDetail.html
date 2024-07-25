@@ -1,0 +1,22 @@
+<div ng-controller="editDetailController">
+    <h1>Edit Employee</h1>
+    <form name="editForm" ng-submit="editForm.$valid && editEmployee()" novalidate>
+
+        <label for="eid" >Employee ID:-</label>
+        <input type="text" ng-model="employee.eid"  id="eid" readonly><br>
+
+        <label for="ename" >Employee Name:-</label>
+        <input type="text" ng-model="employee.ename"  id="ename" required><br>
+
+        <label for="salary" >Salary:-</label>
+        <input type="number" ng-model="employee.salary" id="salary" required><br>
+
+        <label for="dept">Department:-</label>
+        <input type="text" ng-model="employee.dept" id="dept" required><br>
+
+        <button class="btn btn-primary" type="submit">Save</button><br>
+
+        <p>Form Valid? {{editformForm.$valid}} </p>
+
+    </form>
+</div>
